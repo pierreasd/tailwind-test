@@ -1,82 +1,113 @@
-import Head from 'next/head'
+import Image from "next/image";
 
-export default function Home() {
+function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div class="container flex flex-col items-center">
+      <div class="rounded-md">
+        <Image
+          src="/img/square.png"
+          alt="img"
+          width="400"
+          height="400"
+          class="rounded-xl"
+        />
+      </div>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <div class="w-4/12 space-y-10 text-blue-900">
+        <p class="my-10 font-medium text-5xl">Hi, I'm Pierre</p>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+        <div class="space-y-4">
+          <p class="w-28 font-medium text-lg underline underline-offset-2 decoration-2 hover:decoration-yellow-300">
+            Who am i
+          </p>
+          <div class="space-y-3 pl-5">
+            <p class="indent-5">
+              Ex occaecat deserunt enim Lorem ex voluptate excepteur
+              reprehenderit eiusmod aliquip ea commodo est consectetur. Est
+              veniam aliquip amet velit aliquip reprehenderit veniam aute. Elit
+              consequat laboris aliquip cupidatat sint non.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          </div>
         </div>
-      </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+        <div class="space-y-4">
+          <p class="w-28 font-medium text-lg underline underline-offset-2 decoration-2 hover:decoration-yellow-300">
+            My timeline
+          </p>
+
+          <div class="space-y-3">
+            <div class="flex flex-row space-x-5">
+              <p class="text-blue-800 hover:text-yellow-300 font-medium indent-5 cursor-default">
+                1997
+              </p>
+              <p>Born.</p>
+            </div>
+            <div class="flex flex-row space-x-5">
+              <p class="text-blue-800 hover:text-yellow-300 font-medium indent-5 cursor-default">
+                2015
+              </p>
+              <p>Graduated high school and attended university.</p>
+            </div>
+            <div class="flex flex-row space-x-5">
+              <p class="text-blue-800 hover:text-yellow-300 font-medium indent-5 cursor-default">
+                2018
+              </p>
+              <p>
+                Worked as a front-end engineer intern at a tech consultant
+                company.
+              </p>
+            </div>
+            <div class="flex flex-row space-x-5">
+              <p class="text-blue-800 hover:text-yellow-300 font-medium indent-5 cursor-default">
+                2019
+              </p>
+              <p>
+                Graduated from BINUS University with a bachelor degree in
+                computer science.
+              </p>
+            </div>
+            <div class="flex flex-row space-x-5">
+              <p class="text-blue-900 hover:text-yellow-300 font-medium indent-5 cursor-default">
+                2020
+              </p>
+              <p>
+                Currently working as IT/Application support at a mining company.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <p class="w-28 font-medium text-lg underline underline-offset-2 decoration-2 hover:decoration-yellow-300">
+            What i love
+          </p>
+          <div class="space-y-3 pl-5">
+            <p class="indent-5">
+              Music and music production has always been my passion since i was
+              a kid but got <b>&quot;forced&quot;</b> to take computer science
+              for uni and well, now i actually enjoy making apps and websites
+              like these.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <p class="w-30 font-medium text-lg underline underline-offset-2 decoration-2 hover:decoration-yellow-300">
+            Catch me up on
+          </p>
+          <div class="space-y-3">
+            <div class="flex flex-row space-x-5">
+              <div class="text-blue-800 hover:text-yellow-300 font-medium indent-5 cursor-default">
+                
+              </div>
+              <p>Instagram</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
+
+export default Home;
